@@ -19,5 +19,8 @@
    **bower install angular-portfolio**
  
 ## Examples:
+
+  ![Portfolio](portfolio-images/portfolio.jpg)
+
   
   
