@@ -20,7 +20,7 @@
  
 ## Examples:
 
-  ![Portfolio](portfolio-images/portfolio.jpg)
+  ![Portfolio](portfolio-images/angular-portfolio.jpg)
 
   
   
