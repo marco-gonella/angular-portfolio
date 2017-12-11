@@ -1,4 +1,5 @@
 
+
 (function(global, factory) {
 
       if(typeof define === 'function' && define.amd){
@@ -61,7 +62,7 @@
 
             parseItems();
 
-            var areas = parseArea($scope.areas || createDefaultAreas(gC.nCols), gC.rec.parentId);
+            var areas = $scope.areas ? parseArea($scope.areas, gC.rec.parentId) : createDefaultAreas(gC.nCols);
 
             $scope.gridStyle = parseGrid(gC.nCols, gC.sizeRow, gC.gap);
 
@@ -132,7 +133,7 @@
                 validatePortfolio(areas, areasMaxCols)
                 var style = {
                     'grid-template-areas': '',
-                    'grid-template-columns': 'repeat(' + (nCols || areasMaxCols) + ', 1fr )',
+                    'grid-template-columns': 'repeat(' + ((areasMaxCols && nCols < areasMaxCols ? areasMaxCols : nCols) || areasMaxCols) + ', 1fr )',
                     'grid-template-rows': ((gC.rec.iteration > 0) ? "" : 'repeat(' + (areas.length) + ', ' + (sizeRow || '200px') + ')'),
                     'grid-gap': gap
                 };
@@ -247,3 +248,4 @@
         };
     }
 })
+
