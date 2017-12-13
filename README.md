@@ -104,8 +104,8 @@
    ```
    * **areas:** 
    ```js
-      //areas must contain a matrix of ids, and allows you to design items position, dimesions on your portfolio.
-      //By default items are 
+      //areas must contain a matrix of ids, and allows you to design items position, dimensions on your portfolio.
+      //By default items are sequencially proposed one per row
       "areas":[
         [["item1", "item2", "."], // "." is a space
          ["item1", "item2", "item3"]]
@@ -125,8 +125,14 @@
       
                       |content1|content1|content3|
                       |content1|content2|content3|
-      
-      
+      //if you have to set subitems areas, you don't have to specify all subitem ids.
+      //for example:
+      //item
+      {
+        "subitems":[{...},{"id":"mySubItem",...},{...}]
+        "areas":[["sub1", "mySubItem", "sub3"]] instead of [["item1-sub1", "item1-mySubItem", "item1-sub3"]]
+      }
+      //what a comfort!
    ```
     
     
