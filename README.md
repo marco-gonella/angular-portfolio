@@ -54,6 +54,12 @@
               //to set the zoom center, 50% 50% is default (item center)
             "focusCenter": "50% 50%",
             
+            //BACKGROUND OPTIONS
+              //set text color
+            "textColor": "#f96855",
+              //set background color
+            "backgroundColor": "#FFFA5C",
+            
             //HOVER OPTIONS
               //on hover set text color
             "hoverTextColor": "#f96855",
@@ -70,6 +76,7 @@
               //But you can override default configuration with:
             "id": "myId",
               //so, for example you can have "item1", "myId", "item3" (if you set id attribute on second items config)
+              
              //SUBITEMS
               //In subitems you can set recoursive items configuration
             "subitems": [ 
@@ -87,6 +94,16 @@
                   ...
               ],
              //by default subitems are sequencially named as "(parent id)-sub1", "(parent id)-mySubId", "(parent id)-sub3" etc..
+             
+            //AREAS
+              //look point 2 "areas"
+            "areas":[
+                  ["item1", "item2", "item3"], 
+                  ["item1", "item2", "item3"]
+             ]
+              
+            //GENERICCONFIG
+              //look point 3 "generic-config"
             
             //CALLBACKS
               //use this sintax to pass a callback
@@ -97,8 +114,11 @@
             },
             "callback": function(..){....}
               //differences: 
-              //To use "callback: function(){..}", you have to set callback with a function in your js, so you have to manipulate your config
-              //to use "callback: { name: "fn name", params: ["param1", "param2", etc..]}" you don't have to set any functions to your config, just set in your controller $scope (direct parent of this directive) your function, es: $scope.navifate = function(url){..};  
+              //To use "callback: function(){..}", you have to set callback with a function in your js, 
+              //so you have to manipulate your config.
+              //to use "callback: { name: "fn name", params: ["param1", "param2", etc..]}" you don't have to set any 
+              //functions to your config, just set in your controller $scope (direct parent of this directive) your function, 
+              //es: $scope.navifate = function(url){..};  
         }
       ]
    ```
@@ -107,8 +127,8 @@
       //areas must contain a matrix of ids, and allows you to design items position, dimensions on your portfolio.
       //By default items are sequencially proposed one per row
       "areas":[
-        [["item1", "item2", "."], // "." is a space
-         ["item1", "item2", "item3"]]
+         ["item1", "item2", "."], // "." is a space
+         ["item1", "item2", "item3"]
       ]
       //This configuration is well formed and generate this structure:
       
@@ -116,8 +136,8 @@
                       |content1|content2|content3|
       
        "areas":[
-        [["item1", "item1", "item3"],
-         ["item1", "item2", "item3"]]
+         ["item1", "item1", "item3"],
+         ["item1", "item2", "item3"]
       ]
       //This configuration isn't well formed and generate an error.
       //REMEMBER: this component is maded by divs and you can't have a "L" shaped div or
@@ -125,6 +145,7 @@
       
                       |content1|content1|content3|
                       |content1|content2|content3|
+                      
       //if you have to set subitems areas, you don't have to specify all subitem ids.
       //for example:
       //item
@@ -133,6 +154,10 @@
         "areas":[["sub1", "mySubItem", "sub3"]] instead of [["item1-sub1", "item1-mySubItem", "item1-sub3"]]
       }
       //what a comfort!
+   ```
+   * **generic-config:** 
+   ```js
+     //Use generic-config to set default behavior of your main portfolio layer or item
    ```
     
     
