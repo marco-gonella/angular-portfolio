@@ -21,7 +21,7 @@
 ## Examples:
 
   ![Portfolio](portfolio-images/angular-portfolio.jpg)
-
+  
   Configuration for **angular-portfolio** directive or element:
    * **items:** 
    ```js
@@ -68,6 +68,7 @@
             
             //ANIMATIONS
               //set animation time on all properties
+              //default for image: "0,5s" else is disabled
             "animationTime": "0.9s",
             
             //ID
@@ -157,7 +158,43 @@
    ```
    * **generic-config:** 
    ```js
-     //Use generic-config to set default behavior of your main portfolio layer or item
+     //Use generic-config to set generic default behavior of your main portfolio layer or subitems
+     //all this options can be overridden by item options
+     
+     //STRUCTURE OPTIONS
+      //Set portfolio columns, or subitems columns
+     "nCols": 3, 
+      //Set portfolio row size, or subitems row size
+     "sizeRow": "1fr", 
+      //set gap between items
+      //by default a media query set general portfolio gap as
+      //20px(sreen 1200px+), 10px(sreen 768px+), 0px(sreen 0px+) 
+     "gap": "10px",
+     
+     //BACKGROUND OPTIONS
+      //set text color
+    "textColor": "#f96855",
+      //set background color
+    "backgroundColor": "#FFFA5C",
+
+    //HOVER OPTIONS
+      //on hover set text color
+    "hoverTextColor": "#f96855",
+      //on hover set background color
+    "hoverBackgroundColor": "#FFFA5C",
+
+    //ANIMATIONS
+      //set animation time on all properties
+      //default for image: "0,5s" else is disabled
+    "animationTime": "0.9s", 
+                     
+      //FONT
+      //To use font-family(css attribute) import a font in your css
+      //example: @import url("https://fonts.googleapis.com/css?family=Audiowide");
+    "font": "'Audiowide', cursive",
+      //font dimension
+    "fontSize": "0.8em",                
+                               
    ```
     
     
