@@ -16,7 +16,7 @@
     
 ## Installation and Execution:
  
-  ### **bower install angular-portfolio**
+   #### **bower install angular-portfolio**
  
 ## Examples:
 
