@@ -29,6 +29,6 @@
     "web-page"
   ],
   "main": [
-    "dist/angular-portfolio.min.js"
+    "angular-portfolio.js"
   ]
 }
