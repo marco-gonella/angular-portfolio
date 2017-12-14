@@ -28,6 +28,9 @@
 
   ![Portfolio](portfolio-demo/angular-portfolio.jpg)
   
+  ## **Little demo**
+  https://codepen.io/marco-gonella/pen/BmrpWg
+  
   Configuration for **angular-portfolio** directive or element:
    * **items:** 
    ```js
