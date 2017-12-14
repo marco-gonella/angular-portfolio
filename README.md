@@ -14,9 +14,15 @@
    * **JavaScript utility library:** [Lodash](https://lodash.com/)
     
     
-## Installation and Execution:
+## Installation:
  
    #### **bower install angular-portfolio**
+   
+## Directive:
+
+ ```html
+   <ng-portfolio items="items" areas="areas" generic-config="genericConfig"></ng-portfolio>
+ ```
  
 ## Examples:
 
