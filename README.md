@@ -125,7 +125,7 @@
    ```
    * **areas:** 
    ```js
-      //areas must contain a matrix of ids, and allows you to design items position, dimensions on your portfolio.
+      //areas must contain a matrix of ids, and allows you to design items position and dimensions on your portfolio.
       //By default items are sequencially proposed one per row
       "areas":[
          ["item1", "item2", "."], // "." is a space
@@ -159,12 +159,14 @@
    * **generic-config:** 
    ```js
      //Use generic-config to set generic default behavior of your main portfolio layer or subitems
-     //all this options can be overridden by item options
+     //all this options can be overridden by item options.
      
      //STRUCTURE OPTIONS
       //Set portfolio columns, or subitems columns
+      //if areas row elements are more than nCols value, nCols is overridden 
      "nCols": 3, 
       //Set portfolio row size, or subitems row size
+      //by default is 200px
      "sizeRow": "1fr", 
       //set gap between items
       //by default a media query set general portfolio gap as
@@ -196,7 +198,26 @@
     "fontSize": "0.8em",                
                                
    ```
-    
+   
+   <table style="width:100%">
+    <tr>
+      <th>Overwrite priority</th>
+      <th>Portfolio attributes</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>item</td> 
+    </tr>
+   <tr>
+      <td>2</td>
+      <td>areas</td> 
+    </tr>
+   <tr>
+      <td>3</td>
+      <td>generic-config</td>
+    </tr>
+  </table>
+  1 overwrite all
     
   
   
