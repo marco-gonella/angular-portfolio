@@ -1,0 +1,161 @@
+{
+    "items": [
+        {
+            "id": "item",
+            "value": "Shade it, it's easy!",
+            "backgroundColor": "#222",
+            "image": "./imgs/panorama.jpg",
+            "focusScale": 1.6,
+            "focusCenter": "30% 27%",
+            "shadeFocus": true
+        },
+        {
+            "id": "two",
+            "image": "./imgs/dolcezza.jpg",
+            "focusScale": 1.3,
+            "focusCenter": "60% 40%"
+        },
+        {
+            "id": "three",
+            "genericConfig":{
+                "gap": "0px",
+                "sizeRow": "100px",
+                "font": "none",
+                "fontSize": "1em",
+                "hoverBackgroundColor": "#FFFA5C",
+                "hoverTextColor": "#222",
+                "animationTime": "0.9s"
+            },
+            "areas":[
+                ["sub1", "sub1"],
+                ["sub2", "sub2"],
+                ["sub3", "sub3"]
+            ],
+            "subitems": [
+                {
+                    "backgroundColor":"#FFFA5C",
+                    "genericConfig":{
+                        "gap": "0px",
+                        "font": "'Audiowide', cursive",
+                        "fontSize": "1em",
+                        "hoverBackgroundColor":"#ffd64c",
+                        "hoverTextColor": "white",
+                        "animationTime": "0.3s",
+                        "textColor": "#222"
+                    },
+                    "areas":[
+                        ["sub1", "sub1", "sub1", "sub1", "sub1", "sub1", "sub1"],
+                        [".", "sub2", "sub2", "sub2", "sub2", "sub2", "."],
+                        ["sub3", "sub3", "sub3", "sub3", "sub3", "sub3", "sub3"]
+                    ],
+                    "subitems": [
+                        {
+                            "value": "Place"
+                        },
+                        {
+                            "value": "your",
+                            "fontSize": "0.7em"
+                        },
+                        {
+                            "value": "contents"
+                        }
+                    ]
+                },
+                {
+                    "value": "Navigate to..",
+                    "font": "'Audiowide', cursive",
+                    "focusScale": 1.6,
+                    "focusCenter": "50% 50%",
+                    "fontSize": "0.8em",
+                    "hoverTextColor": "#f96855",
+                    "image": "./imgs/hamburg.jpg",
+                    "callback": {
+                        "name": "navigate",
+                        "params": ["http://www.hamburg.com/"]
+                    }
+                },
+                {
+                    "backgroundColor": "#FFFA5C",
+                    "genericConfig": {
+                        "font": "'Audiowide', cursive",
+                        "fontSize": "1.5em",
+                        "hoverBackgroundColor":"#ffd64c",
+                        "hoverTextColor": "white",
+                        "animationTime": "0.3s",
+                        "textColor": "#222",
+                        "gap":"0px"
+                    },
+                    "areas":[
+                        ["."],
+                        ["a", "sub2", "sub3", "sub4"],
+                        ["sub5", "sub6", "sub7", "sub8"],
+                        ["."]
+                    ],
+                    "subitems": [
+                        {
+                            "id": "a",
+                            "value": "%i%",
+                            "icon": "fa fa-linkedin-square",
+                            "fontSize": "1.2em"
+                        },
+                        {
+                            "value": "%i%",
+                            "icon": "fa fa-twitter-square",
+                            "fontSize": "1.2em"
+                        },
+                        {
+                            "value": "%i%",
+                            "icon": "fa fa-facebook-official",
+                            "fontSize": "1.2em"
+                        },
+                        {
+                            "value": "%i%",
+                            "icon": "fa fa-github",
+                            "fontSize": "1.2em"
+                        },
+                        {
+                            "value": "%i%",
+                            "icon": "fa fa-html5",
+                            "hoverBackgroundColor":"none",
+                            "hoverTextColor": "none"
+                        },
+                        {
+                            "value": "HTML5",
+                            "fontSize": "0.7em"
+                        },
+                        {
+                            "value": "CSS3",
+                            "fontSize": "0.7em"
+                        },
+                        {
+                            "value": "%i%",
+                            "icon": "fa fa-css3",
+                            "hoverBackgroundColor":"none",
+                            "hoverTextColor": "none"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "four",
+            "value": "Portfolio",
+            "backgroundColor": "purple"
+        },
+        {
+            "id": "five",
+            "value": "Set your: image, zoom, position",
+            "image": "./imgs/deepPurple.jpg",
+            "focusScale": 1.2
+        }
+    ],
+    "genericConfig": {
+        "font": "'Indie Flower', cursive",
+        "backgroundColor": "#f96855"
+     },
+     "areas": [
+        ["three", "item", "item"],
+        ["three", "four", "two"],
+        ["three", "five", "five"]
+    ]
+}
