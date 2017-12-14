@@ -4,10 +4,10 @@
     "marco-gonella <gonella.marco1@gmail.com>"
   ],
   "version": "0.1",
-  "description": "",
+  "description": "A portfolio fully configurable",
   "main": "angular-portfolio.js",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "git@github.com:marco-gonella/angular-portfolio.git",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,5 +18,11 @@
   "dependencies": {
     "angular": "^1.6.7",
     "lodash": "^4.17.4"
-  }
+  },
+  "keywords": [
+    "angular",
+    "portfolio",
+    "design",
+    "web-page"
+  ]
 }
