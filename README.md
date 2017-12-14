@@ -20,7 +20,7 @@
  
 ## Examples:
 
-  ![Portfolio](portfolio-images/angular-portfolio.jpg)
+  ![Portfolio](portfolio-demo/angular-portfolio.jpg)
   
   Configuration for **angular-portfolio** directive or element:
    * **items:** 
